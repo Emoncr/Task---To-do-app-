@@ -1,11 +1,9 @@
-
+import Home from "./pages/Home"
+import  "./App.css"
 function App() {
 
-
   return (
-    <p className="text-7xl font-bold !underline">
-      Hello world!
-    </p>
+    <Home />
   )
 }
 

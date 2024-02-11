@@ -1,0 +1,23 @@
+/* Global Css here */
+
+h1,
+h2,
+h3 {
+  @apply font-barlow text-gray-800;
+}
+h4,
+h5,
+h6 {
+  @apply font-barlow text-gray-800;
+}
+p,
+li {
+  @apply font-inter text-gray-700;
+}
+
+.custom_input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 font-inter  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+.custom_btn {
+  @apply text-white !bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm  sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-barlow;
+}
