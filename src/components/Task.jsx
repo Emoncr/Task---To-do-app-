@@ -12,9 +12,9 @@ const Task = () => {
 
     return (
         <div>
-            <div class="border border-gray-300 bg-white  p-4  rounded-md">
+            <div className="border border-gray-300 bg-white  p-4  rounded-md">
                 <div className='pb-2'>
-                    <p className='font-normal text-sm sm:text-base '>Add A website</p>
+                    <p className='font-semibold text-sm sm:text-base font-barlow'>Add A website</p>
                 </div>
                 <div className='pt-2 border-t'>
                     <div className='grid grid-cols-2 sm:grid-cols-4  items-start gap-x-1 gap-y-3'>
