@@ -5,16 +5,16 @@ import { MdDeleteForever } from "react-icons/md";
 
 
 
-const Task = () => {
+const Task = ({todo}) => {
     const [btnClick, setBtnClick] = useState(false)
 
 
 
     return (
-        <div>
+     
             <div className="border border-gray-300 bg-white  p-4  rounded-md">
                 <div className='pb-2'>
-                    <p className='font-semibold text-sm sm:text-base font-barlow'>Add A website</p>
+                    <p className='font-semibold text-sm sm:text-base font-barlow'>{todo.todoName}</p>
                 </div>
                 <div className='pt-2 border-t'>
                     <div className='grid grid-cols-2 sm:grid-cols-4  items-start gap-x-1 gap-y-3'>
@@ -23,9 +23,9 @@ const Task = () => {
                             <div
                                 className='flex items-center justify-center gap-1 outline-none'
                             >
-                                <span className='text-base font-barlow font-semibold'>High</span>
+                                <span className='text-base font-barlow font-semibold'>{todo.priority}</span>
                                 <span>
-                                    <FaEdit />
+                                    {/* <FaEdit /> */}
                                 </span>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const Task = () => {
                                 <span>
                                     <FaEdit />
                                 </span>
-                                <span className='text-base font-barlow font-semibold'> Edit Task</span>
+                                <span className='text-base font-barlow font-semibold'> Edit</span>
                             </button>
                         </div>
 
@@ -64,13 +64,13 @@ const Task = () => {
                                 <span>
                                     <MdDeleteForever className='text-red-600 text-lg' />
                                 </span>
-                                <span className='text-base font-barlow font-semibold text-red-600'> Delete Task</span>
+                                <span className='text-base font-barlow font-semibold text-red-600'> Delete</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div >
-        </div >
+     
     )
 }
 

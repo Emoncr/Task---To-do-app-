@@ -11,11 +11,9 @@ const Home = () => {
                         <h1 className='text-xl font-bold'>Welcome to your app</h1>
                     </div>
 
-
                     <div className='mt-6 md:mt-10'>
                         <AppLayout />
                     </div>
-
                 </div>
             </section>
         </main>

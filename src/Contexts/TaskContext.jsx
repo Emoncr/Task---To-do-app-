@@ -7,10 +7,10 @@ const TaskContext = ({ children }) => {
 
     const [todos, dispatch] = useReducer(TaskMangeReducer, primaryState)
 
-    const addToDo = ({ todoName, status, priority }) => {
+    const addToDo = ({ todoName, isComplete, priority }) => {
         dispatch({
             type: 'ADD_TODO',
-            payload: { todoName, status, priority }
+            payload: { todoName, isComplete, priority }
         })
     }
 
