@@ -1,19 +1,76 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FaCheck, FaEdit } from "react-icons/fa";
+import { MdDeleteForever } from "react-icons/md";
+
+
+
 
 const Task = () => {
+    const [btnClick, setBtnClick] = useState(false)
+
+
+
     return (
         <div>
-            <div class="flex items-center">
-                <input
-                    id="checked-checkbox"
-                    type="checkbox"
-                    value=""
-                    className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    style={{ borderRadius: '50%', clipPath: 'circle(50%)' }}
-                />
-                <label for="checked-checkbox" class="text-sm font-medium text-gray-900 dark:text-gray-300">Checked sta</label>
-            </div>
-        </div>
+            <div class="border border-gray-300 bg-white  p-4  rounded-md">
+                <div className='pb-2'>
+                    <p className='font-normal text-sm sm:text-base '>Add A website</p>
+                </div>
+                <div className='pt-2 border-t'>
+                    <div className='grid grid-cols-2 sm:grid-cols-4  items-start gap-x-1 gap-y-3'>
+
+                        <div className='flex items-center justify-start'>
+                            <div
+                                className='flex items-center justify-center gap-1 outline-none'
+                            >
+                                <span className='text-base font-barlow font-semibold'>High</span>
+                                <span>
+                                    <FaEdit />
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button
+                                onClick={e => setBtnClick(!btnClick)}
+                                className='flex items-center justify-center gap-1 outline-none'
+                            >
+                                <span className={`flex items-center justify-center w-5 h-5 border rounded-full text-xs    ${btnClick ? "text-white bg-green-600 border-gray-800" : "bg-transparent border-gray-800 text-gray-800"}  `}>
+                                    {
+                                        btnClick && <FaCheck />
+                                    }
+                                </span>
+                                <span className={`text-base font-barlow font-semibold ${btnClick ? "text-green-600" : "text-gray-800"} `}> Complate</span>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button
+
+                                className='flex items-center justify-center gap-1 outline-none'
+                            >
+                                <span>
+                                    <FaEdit />
+                                </span>
+                                <span className='text-base font-barlow font-semibold'> Edit Task</span>
+                            </button>
+                        </div>
+
+
+                        <div>
+                            <button
+
+                                className='flex items-center justify-center gap-1 outline-none'
+                            >
+                                <span>
+                                    <MdDeleteForever className='text-red-600 text-lg' />
+                                </span>
+                                <span className='text-base font-barlow font-semibold text-red-600'> Delete Task</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div >
+        </div >
     )
 }
 
