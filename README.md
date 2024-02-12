@@ -1,8 +1,11 @@
-# React + Vite
+# welcome to my to-do app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Project_live_URL: https://to-do-app-emoncr.vercel.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Functionalities -
+1. Add Todo task
+##### 2. Todo stored in LocalStorage 
+3. Add priority according to task
+4. ToDo can be marked as complete
+5. ToDo can be edited
+6. ToDo can be Deleted
