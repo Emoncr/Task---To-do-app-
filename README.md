@@ -4,7 +4,7 @@
 
 ## Functionalities -
 
-#### Using LocalStorage for save todos
+## Using LocalStorage for save todos
 
 1. Add Todo task
 3. Add priority according to task
