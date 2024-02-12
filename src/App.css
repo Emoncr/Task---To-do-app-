@@ -10,9 +10,8 @@ h5,
 h6 {
   @apply font-barlow text-gray-800;
 }
-p,
-li {
-  @apply font-inter text-gray-700;
+p,li {
+  @apply font-inter text-gray-900;
 }
 
 .custom_input {
@@ -27,6 +26,14 @@ select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
+}
+/* Handle Search Scrollbar CSS */
+.todo_scrollber::-webkit-scrollbar {
+  @apply w-[2px];
+}
+
+.todo_scrollber::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-400;
 }
 
 /* Home page css */
